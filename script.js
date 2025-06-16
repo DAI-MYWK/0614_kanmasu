@@ -206,7 +206,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .section-subtitle,
         .service-card,
         .strength-item,
-        .news-item,
         .stakeholder-item,
         .mission-content,
         .mission-visual,
@@ -221,12 +220,13 @@ document.addEventListener("DOMContentLoaded", function () {
         .support-main,
         .voice-card,
         .strength-hero-content,
-        .strength-hero-image
+        .strength-hero-image,
+        .services-header
     `);
 
   // 左右スライドイン要素も監視
   const slideTargets = document.querySelectorAll(
-    ".slide-in-left, .slide-in-right, .fade-in"
+    ".slide-in-left, .slide-in-right, .fade-in, .slide-in-up"
   );
 
   // 通常のアニメーション要素
