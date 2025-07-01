@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="process-page">
     <!-- ヘッダー -->
     <header class="header">
       <nav class="nav">
@@ -28,8 +28,11 @@
         </div>
         <ul class="nav-menu">
           <li><a href="index.html">TOPページ</a></li>
+          <li><a href="services.html">サービス紹介</a></li>
           <li><a href="process.html" class="active">導入プロセス</a></li>
-          <li><a href="tools.html">活用ツール</a></li>
+          <li><a href="voices.html">お客様の声</a></li>
+          <li><a href="cases.html">導入事例</a></li>
+          <li><a href="journal.html">KANMASU Journal</a></li>
         </ul>
         <div class="hamburger">
           <span></span>
@@ -39,60 +42,43 @@
       </nav>
     </header>
 
-    <!-- ページヒーロー -->
-    <section class="hero subpage process-hero">
-      <div class="hero-container">
-        <div class="hero-content">
-          <div class="hero-tag">段階的なAI導入支援</div>
-          <h1 class="hero-title">
-            <span class="title-line">確実な効果を</span>
-            <span class="title-line highlight">段階的に</span>
-            <span class="title-line">実現する</span>
+    <!-- 1. ヒーローセクション -->
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <div class="page-hero-content">
+          <div class="section-category">PROCESS</div>
+          <h1 class="page-title">
+            確実な効果を<br />
+            <span class="highlight">段階的に</span>実現する
           </h1>
-          <p class="hero-description">
+          <p class="page-description">
             お客様の課題に合わせた4段階の導入プロセスで、AI活用を確実に成功へ導きます。<br />
-            現状分析から運用サポートまで、各段階で明確な成果と次のステップを提示し、<br />
-            継続的な成長をサポートします。
+            現状分析から運用サポートまで、各段階で明確な成果と次のステップを提示し、継続的な成長をサポートします。
           </p>
-          <div class="hero-cta">
-            <a href="index.html#contact" class="btn-primary"
-              >無料相談を申し込む</a
-            >
-            <a href="#process-detail" class="btn-secondary">導入フロー詳細</a>
+          <div class="page-hero-cta">
+            <a href="index.html#contact" class="cta-primary">
+              無料相談を申し込む
+            </a>
+            <a href="#process-detail" class="cta-secondary"> 導入フロー詳細 </a>
           </div>
         </div>
-        <div class="hero-visual">
+        <div class="page-hero-visual">
           <img
             src="img/presentation04.png"
             alt="導入プロセス"
-            class="hero-img main"
-          />
-          <img
-            src="img/discussion08.png"
-            alt="ヒアリング"
-            class="hero-img floating"
-          />
-          <img
-            src="img/groupwork02.png"
-            alt="研修実施"
-            class="hero-img small"
+            class="page-hero-img"
           />
         </div>
       </div>
-      <div class="hero-scroll">
-        <span>Scroll</span>
-        <div class="scroll-arrow"></div>
-      </div>
     </section>
 
-    <!-- 導入プロセス詳細 -->
-    <section id="process-detail" class="process-detail">
-      <div class="process-container">
-        <div class="process-intro">
-          <div class="section-category">INTRODUCTION</div>
-          <div class="section-subtitle">プロセス概要</div>
+    <!-- 2. 導入プロセス詳細 -->
+    <section id="process-detail" class="services-detail">
+      <div class="services-detail-container">
+        <div class="services-detail-header">
+          <div class="section-category">OUR PROCESS</div>
           <h2 class="section-title">4段階の導入フロー</h2>
-          <p class="process-intro-text">
+          <p class="section-description">
             現状分析から運用サポートまで、お客様のペースに合わせた段階的な導入を行います。<br />
             各段階で明確な成果と次のステップを提示し、確実な効果を実現します。
           </p>
@@ -132,177 +118,148 @@
           </div>
         </div>
 
-        <div class="process-steps">
+        <div class="service-details">
           <!-- ステップ1 -->
-          <div class="process-step step-hero">
-            <div class="step-container">
-              <div class="step-content slide-in-left">
-                <div class="step-tag">STEP 01</div>
-                <h3 class="step-hero-title">
-                  <span class="title-line">現状を</span>
-                  <span class="title-line highlight">深く理解し</span>
-                  <span class="title-line">課題を発見</span>
-                </h3>
-                <p class="step-hero-description">
-                  お客様の業務フローや組織文化を詳細にヒアリングし、真の課題を特定。<br />
-                  表面的な問題ではなく、根本的な改善ポイントを見つけ出し、<br />
-                  最適なAI導入戦略の基盤を築きます。
-                </p>
-                <div class="step-details">
-                  <div class="step-info">
-                    <div class="step-duration">期間: 1-2週間</div>
-                    <div class="step-deliverable">
-                      <strong>成果物:</strong> 現状分析レポート、課題整理シート
-                    </div>
-                  </div>
-                  <div class="step-actions">
-                    <h4>実施内容</h4>
-                    <ul>
-                      <li>業務フローの可視化</li>
-                      <li>現在のツール・システムの調査</li>
-                      <li>課題の優先度付け</li>
-                      <li>AI導入可能性の評価</li>
-                    </ul>
-                  </div>
+          <div class="service-detail-card">
+            <div class="service-detail-visual">
+              <img src="img/discussion08.png" alt="ヒアリング・現状分析" />
+            </div>
+            <div class="service-detail-content">
+              <div class="service-detail-category dx">STEP 01</div>
+              <h3 class="service-detail-title">
+                現状を深く理解し<br />課題を発見
+              </h3>
+              <p class="service-detail-description">
+                お客様の業務フローや組織文化を詳細にヒアリングし、真の課題を特定。
+                表面的な問題ではなく、根本的な改善ポイントを見つけ出し、
+                最適なAI導入戦略の基盤を築きます。
+              </p>
+              <div class="service-detail-features">
+                <div class="feature-item">
+                  <div>業務フローの可視化</div>
+                </div>
+                <div class="feature-item">
+                  <div>現在のツール・システムの調査</div>
+                </div>
+                <div class="feature-item">
+                  <div>課題の優先度付け</div>
+                </div>
+                <div class="feature-item">
+                  <div>AI導入可能性の評価</div>
                 </div>
               </div>
-              <div class="step-visual slide-in-right">
-                <img
-                  src="img/discussion08.png"
-                  alt="ヒアリング・現状分析"
-                  class="step-img"
-                />
+              <div class="service-detail-price">期間: 1-2週間</div>
+              <div class="service-detail-deliverable">
+                <strong>成果物:</strong> 現状分析レポート、課題整理シート
               </div>
             </div>
           </div>
 
           <!-- ステップ2 -->
-          <div class="process-step step-hero reverse">
-            <div class="step-container">
-              <div class="step-content slide-in-right">
-                <div class="step-tag">STEP 02</div>
-                <h3 class="step-hero-title">
-                  <span class="title-line">最適な</span>
-                  <span class="title-line highlight">ソリューションを</span>
-                  <span class="title-line">設計する</span>
-                </h3>
-                <p class="step-hero-description">
-                  発見した課題に対して、最も効果的なAI活用シナリオを設計。<br />
-                  ROIを明確にした導入計画で、確実な成果を約束し、<br />
-                  段階的なロードマップで安心の導入を実現します。
-                </p>
-                <div class="step-details">
-                  <div class="step-info">
-                    <div class="step-duration">期間: 1-2週間</div>
-                    <div class="step-deliverable">
-                      <strong>成果物:</strong> 導入計画書、ROI試算、プロトタイプ
-                    </div>
-                  </div>
-                  <div class="step-actions">
-                    <h4>実施内容</h4>
-                    <ul>
-                      <li>AI活用シナリオの設計</li>
-                      <li>ツール選定と比較検討</li>
-                      <li>導入スケジュールの策定</li>
-                      <li>効果測定指標の設定</li>
-                    </ul>
-                  </div>
+          <div class="service-detail-card reverse">
+            <div class="service-detail-visual">
+              <img src="img/presentation05.png" alt="ソリューション設計" />
+            </div>
+            <div class="service-detail-content">
+              <div class="service-detail-category ai">STEP 02</div>
+              <h3 class="service-detail-title">
+                最適なソリューションを<br />設計する
+              </h3>
+              <p class="service-detail-description">
+                発見した課題に対して、最も効果的なAI活用シナリオを設計。
+                ROIを明確にした導入計画で、確実な成果を約束し、
+                段階的なロードマップで安心の導入を実現します。
+              </p>
+              <div class="service-detail-features">
+                <div class="feature-item">
+                  <div>AI活用シナリオの設計</div>
+                </div>
+                <div class="feature-item">
+                  <div>ツール選定と比較検討</div>
+                </div>
+                <div class="feature-item">
+                  <div>導入スケジュールの策定</div>
+                </div>
+                <div class="feature-item">
+                  <div>効果測定指標の設定</div>
                 </div>
               </div>
-              <div class="step-visual slide-in-left">
-                <img
-                  src="img/presentation05.png"
-                  alt="ソリューション設計"
-                  class="step-img"
-                />
+              <div class="service-detail-price">期間: 1-2週間</div>
+              <div class="service-detail-deliverable">
+                <strong>成果物:</strong> 導入計画書、ROI試算、プロトタイプ
               </div>
             </div>
           </div>
 
           <!-- ステップ3 -->
-          <div class="process-step step-hero">
-            <div class="step-container">
-              <div class="step-content slide-in-left">
-                <div class="step-tag">STEP 03</div>
-                <h3 class="step-hero-title">
-                  <span class="title-line">実践的な</span>
-                  <span class="title-line highlight">導入と研修で</span>
-                  <span class="title-line">スキルを習得</span>
-                </h3>
-                <p class="step-hero-description">
-                  理論だけではない、実践的なツール導入と現場に即した研修を実施。<br />
-                  スタッフが自信を持ってAIを活用できるよう、<br />
-                  きめ細やかなサポートで確実なスキル習得を支援します。
-                </p>
-                <div class="step-details">
-                  <div class="step-info">
-                    <div class="step-duration">期間: 2-4週間</div>
-                    <div class="step-deliverable">
-                      <strong>成果物:</strong>
-                      導入完了報告書、操作マニュアル、研修資料
-                    </div>
-                  </div>
-                  <div class="step-actions">
-                    <h4>実施内容</h4>
-                    <ul>
-                      <li>ツールの導入・設定</li>
-                      <li>カスタマイズとテスト</li>
-                      <li>スタッフ向け研修実施</li>
-                      <li>初期運用のサポート</li>
-                    </ul>
-                  </div>
+          <div class="service-detail-card">
+            <div class="service-detail-visual">
+              <img src="img/groupwork02.png" alt="導入・研修実施" />
+            </div>
+            <div class="service-detail-content">
+              <div class="service-detail-category training">STEP 03</div>
+              <h3 class="service-detail-title">
+                実践的な導入と研修で<br />スキルを習得
+              </h3>
+              <p class="service-detail-description">
+                理論だけではない、実践的なツール導入と現場に即した研修を実施。
+                スタッフが自信を持ってAIを活用できるよう、
+                きめ細やかなサポートで確実なスキル習得を支援します。
+              </p>
+              <div class="service-detail-features">
+                <div class="feature-item">
+                  <div>ツールの導入・設定</div>
+                </div>
+                <div class="feature-item">
+                  <div>カスタマイズとテスト</div>
+                </div>
+                <div class="feature-item">
+                  <div>スタッフ向け研修実施</div>
+                </div>
+                <div class="feature-item">
+                  <div>初期運用のサポート</div>
                 </div>
               </div>
-              <div class="step-visual slide-in-right">
-                <img
-                  src="img/groupwork02.png"
-                  alt="導入・研修実施"
-                  class="step-img"
-                />
+              <div class="service-detail-price">期間: 2-4週間</div>
+              <div class="service-detail-deliverable">
+                <strong>成果物:</strong>
+                導入完了報告書、操作マニュアル、研修資料
               </div>
             </div>
           </div>
 
           <!-- ステップ4 -->
-          <div class="process-step step-hero reverse">
-            <div class="step-container">
-              <div class="step-content slide-in-right">
-                <div class="step-tag">STEP 04</div>
-                <h3 class="step-hero-title">
-                  <span class="title-line">継続的な</span>
-                  <span class="title-line highlight">改善で</span>
-                  <span class="title-line">成長を加速</span>
-                </h3>
-                <p class="step-hero-description">
-                  導入後も終わりではなく、ここからが本当のスタート。<br />
-                  データに基づいた効果測定と継続的な改善提案で、<br />
-                  お客様の持続的な成長を長期にわたってサポートします。
-                </p>
-                <div class="step-details">
-                  <div class="step-info">
-                    <div class="step-duration">期間: 継続的</div>
-                    <div class="step-deliverable">
-                      <strong>成果物:</strong>
-                      月次レポート、改善提案書、追加研修
-                    </div>
-                  </div>
-                  <div class="step-actions">
-                    <h4>実施内容</h4>
-                    <ul>
-                      <li>効果測定と分析</li>
-                      <li>運用課題の解決</li>
-                      <li>追加機能の提案・実装</li>
-                      <li>継続的なスキルアップ支援</li>
-                    </ul>
-                  </div>
+          <div class="service-detail-card reverse">
+            <div class="service-detail-visual">
+              <img src="img/uservoice05.png" alt="運用サポート・改善" />
+            </div>
+            <div class="service-detail-content">
+              <div class="service-detail-category dx">STEP 04</div>
+              <h3 class="service-detail-title">
+                継続的な改善で<br />成長を加速
+              </h3>
+              <p class="service-detail-description">
+                導入後も終わりではなく、ここからが本当のスタート。
+                データに基づいた効果測定と継続的な改善提案で、
+                お客様の持続的な成長を長期にわたってサポートします。
+              </p>
+              <div class="service-detail-features">
+                <div class="feature-item">
+                  <div>効果測定と分析</div>
+                </div>
+                <div class="feature-item">
+                  <div>運用課題の解決</div>
+                </div>
+                <div class="feature-item">
+                  <div>追加機能の提案・実装</div>
+                </div>
+                <div class="feature-item">
+                  <div>継続的なスキルアップ支援</div>
                 </div>
               </div>
-              <div class="step-visual slide-in-left">
-                <img
-                  src="img/uservoice05.png"
-                  alt="運用サポート・改善"
-                  class="step-img"
-                />
+              <div class="service-detail-price">期間: 継続的</div>
+              <div class="service-detail-deliverable">
+                <strong>成果物:</strong> 月次レポート、改善提案書、追加研修
               </div>
             </div>
           </div>
@@ -358,7 +315,6 @@
           <p>お客様の状況に合わせた最適な導入プランをご提案いたします</p>
           <a href="index.html#contact" class="btn-primary">
             無料相談を申し込む
-            <span class="cta-arrow">→</span>
           </a>
         </div>
       </div>

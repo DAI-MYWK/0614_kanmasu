@@ -10,14 +10,37 @@ document.addEventListener("DOMContentLoaded", function () {
   // 流れるスライダー関連
   const sliderTrack = document.querySelector(".slider-track");
 
-  // ========== ヘッダースクロール効果 ==========
+  // ========== ヘッダースクロール効果 & スクロール追従CTA ==========
+  const floatingCTA = document.getElementById("floatingCTA");
+
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 100) {
+    const scrollY = window.scrollY;
+
+    // ヘッダースクロール効果
+    if (scrollY > 100) {
       header.style.background = "rgba(255, 255, 255, 0.98)";
       header.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
     } else {
       header.style.background = "rgba(255, 255, 255, 0.95)";
       header.style.boxShadow = "none";
+    }
+
+    // スクロール追従CTA表示制御
+    if (floatingCTA) {
+      const heroSection = document.querySelector(".hero");
+      const contactSection = document.querySelector("#contact");
+
+      // ヒーローセクションを過ぎて、コンタクトセクション手前まで表示
+      const heroHeight = heroSection ? heroSection.offsetHeight : 0;
+      const contactOffset = contactSection
+        ? contactSection.offsetTop - window.innerHeight
+        : document.body.scrollHeight;
+
+      if (scrollY > heroHeight && scrollY < contactOffset) {
+        floatingCTA.classList.add("show");
+      } else {
+        floatingCTA.classList.remove("show");
+      }
     }
   });
 
@@ -108,8 +131,42 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // ========== ヒーロー画像のホバー効果（固定のため無効化）==========
-  // ヒーロー画像は固定表示のためホバー効果を無効化
+  // ========== ヒーロースライダー ==========
+  const slides = document.querySelectorAll(".slide");
+  const dots = document.querySelectorAll(".dot");
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    // 全てのスライドを非表示
+    slides.forEach((slide) => slide.classList.remove("active"));
+    dots.forEach((dot) => dot.classList.remove("active"));
+
+    // 指定されたスライドを表示
+    if (slides[index]) {
+      slides[index].classList.add("active");
+    }
+    if (dots[index]) {
+      dots[index].classList.add("active");
+    }
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // ドットクリック機能
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      currentSlide = index;
+      showSlide(currentSlide);
+    });
+  });
+
+  // 自動スライド（5秒間隔）
+  if (slides.length > 0) {
+    setInterval(nextSlide, 5000);
+  }
 
   // ========== 強みセクションのインタラクション ==========
   strengthItems.forEach((item) => {

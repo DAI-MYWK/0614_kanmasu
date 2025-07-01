@@ -26,8 +26,11 @@
         </div>
         <ul class="nav-menu">
           <li><a href="index.html" class="active">TOPページ</a></li>
+          <li><a href="services.html">サービス紹介</a></li>
           <li><a href="process.html">導入プロセス</a></li>
-          <li><a href="tools.html">活用ツール</a></li>
+          <li><a href="voices.html">お客様の声</a></li>
+          <li><a href="cases.html">導入事例</a></li>
+          <li><a href="journal.html">KANMASU Journal</a></li>
         </ul>
         <div class="hamburger">
           <span></span>
@@ -39,39 +42,46 @@
 
     <!-- 1. ヒーローセクション -->
     <section class="hero">
-      <div class="hero-container">
+      <div class="hero-slider">
+        <div class="slider-wrapper">
+          <div class="slide active">
+            <img src="img/hero01.png" alt="ヒーロー画像1" />
+          </div>
+          <div class="slide">
+            <img src="img/hero02.png" alt="ヒーロー画像2" />
+          </div>
+          <div class="slide">
+            <img src="img/hero03.png" alt="ヒーロー画像3" />
+          </div>
+          <div class="slide">
+            <img src="img/hero04.png" alt="ヒーロー画像4" />
+          </div>
+        </div>
+        <div class="slider-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+          <span class="dot" data-slide="3"></span>
+        </div>
+      </div>
+      <div class="hero-content-wrapper">
         <div class="hero-content">
           <div class="hero-tag">群馬発、生成AI伴走支援</div>
           <h2 class="hero-title">
-            <span class="title-line">人や地域を</span>
-            <span class="title-line highlight">かき混ぜて</span>
-            <span class="title-line">未来を拓く</span>
+            <span class="title-line"
+              >地域とお客様の想いに寄り添い、生成AIとDXで</span
+            >
+            <span class="title-line highlight">"業務改革と価値創造"</span>
+            <span class="title-line">を共に実現します</span>
           </h2>
           <p class="hero-description">
             中小企業・自治体の生成AI導入とDX化を、表面的な改善ではなく本質的な変化まで伴走支援。<br />
             ChatGPTやClaudeを活用した業務改善から人材育成まで、現場に寄り添ったソリューションを提供します。
           </p>
           <div class="hero-cta">
-            <a href="#contact" class="btn-primary">無料相談を申し込む</a>
-            <a href="#services" class="btn-secondary">サービス詳細</a>
+            <a href="#contact" class="cta-primary"> 無料相談を申し込む </a>
+            <a href="#services" class="cta-secondary"> サービス詳細 </a>
           </div>
-        </div>
-        <div class="hero-visual">
-          <img
-            src="img/groupwork01.png"
-            alt="チームワーク"
-            class="hero-img main"
-          />
-          <img
-            src="img/presentation01.png"
-            alt="プレゼンテーション"
-            class="hero-img floating"
-          />
-          <img
-            src="img/discussion01.png"
-            alt="ディスカッション"
-            class="hero-img small"
-          />
         </div>
       </div>
       <div class="hero-scroll">
@@ -113,9 +123,55 @@
           </div>
         </div>
       </div>
+
+      <!-- ミッションセクションCTA -->
+      <div class="section-cta">
+        <div class="section-cta-group">
+          <a href="#contact" class="cta-primary"> 無料相談はこちら </a>
+        </div>
+      </div>
     </section>
 
-    <!-- 3. サービス紹介 -->
+    <!-- 3. お知らせ・最新活動 -->
+    <section id="news" class="news">
+      <div class="news-container">
+        <div class="news-header">
+          <div class="section-category">NEWS</div>
+          <div class="section-subtitle">最新の活動実績</div>
+          <h2 class="section-title">伴走支援の取り組み</h2>
+          <p class="news-description">
+            地域に根ざした活動と最新の取り組みをお知らせします。<br />
+            中小企業・自治体様との実際のプロジェクトや研修実績をご紹介いたします。
+          </p>
+        </div>
+        <div class="news-cards">
+          <div class="news-card slide-in-up">
+            <div class="news-date">2025.01.15</div>
+            <h4 class="news-title">高崎市で生成AI研修を実施</h4>
+            <p class="news-excerpt">
+              職員向けに生成AI活用研修を行いました。業務効率化と住民サービス向上を目的とした実践的な内容で実施。
+            </p>
+          </div>
+          <div class="news-card slide-in-up">
+            <div class="news-date">2025.01.01</div>
+            <h4 class="news-title">中小製造業A社の業務DXを支援</h4>
+            <p class="news-excerpt">
+              日報集計の自動化により週8時間の作業時間削減を実現。現場に寄り添った改善提案で大幅な効率化に成功。
+            </p>
+          </div>
+          <div class="news-card slide-in-up">
+            <div class="news-date">2024.12.20</div>
+            <h4 class="news-title">サイトリニューアル公開！</h4>
+            <p class="news-excerpt">
+              新しい理念「Five
+              Happy」を反映したデザインに刷新。地域密着の想いをより分かりやすくお伝えできるサイトに。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. サービス紹介 -->
     <section id="services" class="services">
       <div class="services-container">
         <div class="services-header">
@@ -154,11 +210,13 @@
             <div class="service-price">都度相談</div>
           </div>
         </div>
-        <div class="services-cta">
-          <a href="#contact" class="service-cta">
-            サービス詳細を見る
-            <span class="cta-arrow">→</span>
-          </a>
+        <div class="section-cta">
+          <div class="section-cta-group">
+            <a href="#contact" class="cta-primary"> 無料相談はこちら </a>
+            <a href="process.html" class="cta-secondary">
+              サービス詳細を見る
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -179,10 +237,7 @@
               私たちは「すきを見つけて、すきを伸ばす。」を理念に、<br />
               お客様の可能性を最大限に引き出すパートナーとして貢献いたします。
             </p>
-            <a href="#contact" class="strength-cta">
-              選ばれる理由はこちら
-              <span class="cta-arrow">→</span>
-            </a>
+            <a href="#contact" class="strength-cta"> 選ばれる理由はこちら </a>
           </div>
           <div class="strength-hero-image slide-in-right">
             <img src="img/discussion05.png" alt="AIコンサルティング" />
@@ -333,6 +388,23 @@
           </div>
         </div>
       </div>
+
+      <!-- 強化されたCTAバナー -->
+      <div class="cta-banner">
+        <div class="cta-banner-content">
+          <h3>まずは無料相談から始めませんか？</h3>
+          <p>
+            生成AIとDXの導入で、あなたのビジネスがどう変わるかを具体的にご提案します。<br />
+            お気軽にご相談ください。初回相談は完全無料です。
+          </p>
+          <div class="section-cta-group">
+            <a href="#contact" class="cta-primary"> 無料相談を申し込む </a>
+            <a href="process.html" class="cta-secondary">
+              導入プロセスを見る
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- 6. サポート体制 -->
@@ -356,14 +428,12 @@
               <p>
                 導入から運用まで、お客様の成功を全力でサポートします。単発のコンサルティングではなく、継続的なパートナーとして伴走いたします。
               </p>
-              <div class="support-cta">
-                <a href="process.html" class="support-link">
+              <div class="section-cta-group">
+                <a href="process.html" class="cta-secondary">
                   導入プロセスを見る
-                  <span class="cta-arrow">→</span>
                 </a>
-                <a href="tools.html" class="support-link">
+                <a href="tools.html" class="cta-secondary">
                   活用ツールを見る
-                  <span class="cta-arrow">→</span>
                 </a>
               </div>
             </div>
@@ -503,6 +573,11 @@
         <p>&copy; 2025 KANMASU. All rights reserved.</p>
       </div>
     </footer>
+
+    <!-- スクロール追従CTA -->
+    <div class="floating-cta" id="floatingCTA">
+      <a href="#contact" class="cta-primary"> 無料相談 </a>
+    </div>
 
     <script src="script.js"></script>
   </body>
